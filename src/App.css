@@ -21,7 +21,7 @@
 }
 
 .headerText {
-  color: #F5A9BC;
+  color: #f5a9bc;
   font-size: 3em;
   margin: 0% 2% 0% 2%;
 }
@@ -29,18 +29,18 @@
 .largeHeader {
   font-size: 3.5em;
   font-weight: bold;
-  color: #3B0B0B;
+  color: #3b0b0b;
 }
 
 .smallHeader {
   font-size: 1.75em;
   font-weight: bold;
-  color: #3B0B0B;
+  color: #3b0b0b;
 }
 
 .normalText {
   font-family: Georgia, serif;
-  font-size: .75em;
+  font-size: 0.75em;
 }
 
 .hoggyText {
@@ -58,20 +58,18 @@ ul {
 
 .normalText ul {
   font-family: Georgia, serif;
-  font-size: .75em;
+  font-size: 0.75em;
   text-align: left;
 }
 
 .subtleText {
-  color: #D1D1D1;
-  font-size: .75em; 
+  color: #d1d1d1;
+  font-size: 0.75em;
 }
-
 
 .indexWrapper {
   margin: auto;
 }
-
 
 .pigTile {
   display: inline;
@@ -80,11 +78,14 @@ ul {
   float: left;
   margin: 2%;
   padding: 1%;
-  outline: #3B0B0B dotted thick;
+  outline: #3b0b0b dotted thick;
   transition: 0.75s;
   opacity: 1;
 }
 
+.pigTile img {
+  width: 600px;
+}
 .minBackgroundSneak {
   position: absolute;
   width: inherit;
@@ -103,7 +104,7 @@ ul {
 }
 
 .pigTile h3 {
-  color: #FBB;
+  color: #fbb;
 }
 .minPigTile {
   width: 250px;
@@ -121,11 +122,10 @@ ul {
   transform: scale(1.05);
 }
 
-
 .App-logo {
   animation: App-logo-spin infinite 5s linear;
   height: 80px;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .footer {
@@ -133,8 +133,62 @@ ul {
   clear: both;
 }
 
-
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Dropdown Button */
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+button:hover,
+button:focus {
+  background-color: #2980b9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content option {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content option:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
 }
